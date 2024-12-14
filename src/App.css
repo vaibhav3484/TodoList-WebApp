@@ -1,0 +1,20 @@
+h1{
+    font-weight: 700;
+    font-size: 45px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    text-align: center;
+
+}
+
+.td-row{
+    margin: 10px;
+}
+
+.td-buttton{
+    min-width: 80px;
+}
