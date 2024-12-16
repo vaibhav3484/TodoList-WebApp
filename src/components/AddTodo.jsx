@@ -18,10 +18,25 @@ function AddTodo() {
   }; 
 
   const handleAddButtonClicked = () => {
+    if (todoName.trim() === "" || dueDate.trim() === "") {
+      // If either todoName or dueDate is blank
+      alert("Please fill in both the task and date.");
+    } else {
+      // If both fields are filled
+      addNewItem(todoName, dueDate);
+      setTodoName("");
+      setDueDate("");
+    }
+  };
+
+
+  /* const handleAddButtonClicked = () => {
     addNewItem(todoName, dueDate);
     setTodoName("");
     setDueDate("");
-  };
+  };   */
+
+
 
   return (
     <div className="container text-center td-row">
